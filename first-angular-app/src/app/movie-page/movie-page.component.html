@@ -1,0 +1,12 @@
+<form>
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput placeholder="Enter name" [value]="offsetPage">
+  </mat-form-field>
+  <button mat-button color="accent">Put</button>
+</form>
+<app-characters-block [offsetPage]="offsetPage"></app-characters-block>
+<mat-paginator [length]="100"
+              [pageSize]="10"
+              aria-label="Select page" (page)="onChoosePage($event)">
+</mat-paginator>s

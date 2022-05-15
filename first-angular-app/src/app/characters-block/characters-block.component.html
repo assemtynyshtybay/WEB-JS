@@ -1,0 +1,5 @@
+<mat-grid-list cols="5" rowHeight="2:3">
+  <mat-grid-tile *ngFor="let char of characters">
+    <app-character-card [character]="char"></app-character-card>
+  </mat-grid-tile>
+</mat-grid-list>
