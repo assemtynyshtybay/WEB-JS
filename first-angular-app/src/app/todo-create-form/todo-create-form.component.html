@@ -1,0 +1,9 @@
+<h2 class="todo_title">TODO Application</h2>
+<div class="todo_create_form">
+
+  <mat-form-field class="input-full_width" appearance="fill">
+    <mat-label>Enter text</mat-label>
+    <input type="email" matInput [(ngModel)]="taskText" placeholder="Enter text">
+  </mat-form-field>
+  <button class="todo_create_button" mat-flat-button color="primary" (click)="onHandleCreate()">Create</button>
+</div>

@@ -1,0 +1,17 @@
+<ul class="todo_list">
+  <li *ngFor="let task of taskList" class="todo_item">
+    <div class="content_task">
+      <p class="todo_item-title">{{ task.text }}</p>
+      <div class="content_action">
+        <mat-checkbox class="example-margin" [checked]="task.done" (change)="changeTaskStatus(task)">
+          Done
+        </mat-checkbox>
+        <button mat-mini-fab color="primary" aria-label="Example icon button with a delete icon"
+          (click)="onHandleDelete(task)"
+        >
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>
